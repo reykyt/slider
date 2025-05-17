@@ -1,4 +1,4 @@
-let images = ['images1.jfif', 'images2.jpg', 'images3.jfif']
+let images = ['images1.jfif', 'images2.webp', 'images3.jfif']
 let slider = document.getElementById("slider");
 let indicators;
 let indicatorList = document.getElementById("indicatorList");
@@ -10,7 +10,7 @@ for (let i = 0; i < images.length; i++) {
 indicators = document.querySelectorAll(".indicator");
 let i = 0;
 slider.src = `img/${images[0]}`;
-indicators[0].style.borderColor = 'red';
+indicators[0].style.borderColor = 'black';
 
 let left = document.getElementById("left");
 
@@ -38,9 +38,9 @@ function prev() {
     for (let i = 0; i < images.length; i++) {
         indicators[i].style.borderColor = 'transparent';
 
-        indicators[i].style.borderColor = 'red';
+
     }
-    console.log(1);
+    indicators[i].style.borderColor = 'black';
 
 }
 
@@ -55,6 +55,7 @@ function next() {
     for (let i = 0; i < images.length; i++) {
         indicators[i].style.borderColor = 'transparent';
 
-        indicators[i].style.borderColor = 'red';
+
     }
+    indicators[i].style.borderColor = 'black';
 }

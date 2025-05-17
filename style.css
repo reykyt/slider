@@ -18,14 +18,45 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .indicator {
     width: 20px;
     height: 20px;
-    background-color: green;
+    background-color: rgb(142, 166, 243);
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
     border-radius: 50%;
+}
+
+.btns {
+    width: 100px;
+    height: 100px;
+    border: none;
+
+}
+
+.slider_div {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+}
+
+#slider {
+    width: 250px;
+    height: 250px;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
 }
